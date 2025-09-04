@@ -1,0 +1,34 @@
+{
+  "manifest_version": 3,
+  "name": "Wordly",
+  "version": "0.1.0",
+  "description": "Wordly est une extension simple et rapide qui permet de traduire instantanément n’importe quel texte sélectionné sur une page web. Plus besoin de copier-coller dans un site de traduction ni de traduire toute la page : sélectionne un mot ou une phrase, clique, et Wordly te donne la traduction directement sur place.",
+  "icons": {
+    "16": "16.png",
+    "48": "48.png",
+    "128": "128.png"
+  },
+  "action": {
+    "default_title": "Wordly",
+    "default_popup": "src/popup/popup.html"
+  },
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  },
+  "permissions": ["activeTab", "scripting"],
+  "host_permissions": ["<all_urls>"],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["assets/content.js"],
+      "run_at": "document_idle"
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["assets/*.css"],
+      "matches": ["<all_urls>"]
+    }
+  ]
+}
