@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "Wordly",
   "version": "0.1.0",
-  "description": "Wordly est une extension simple et rapide qui permet de traduire instantanément n’importe quel texte sélectionné sur une page web. Plus besoin de copier-coller dans un site de traduction ni de traduire toute la page : sélectionne un mot ou une phrase, clique, et Wordly te donne la traduction directement sur place.",
+  "description": "Wordly is a simple and fast extension that lets you instantly translate any selected text on a web page. No more copy-pasting into translation websites or translating the entire page: just select a word or sentence, click, and Wordly gives you the translation right where you need it.",
   "icons": {
     "16": "16.png",
     "48": "48.png",
